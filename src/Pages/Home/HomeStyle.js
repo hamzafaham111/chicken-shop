@@ -1,0 +1,94 @@
+import { makeStyles } from "@material-ui/core";
+export const useStyle = makeStyles(theme=>({
+    root:{margin:"auto",marginTop:"20px"},
+    totleBlock:{
+        display:"flex",
+        flexDirection:"column",
+        justifyContent:"center",
+        alignItems:"center",
+        width:"90%",
+        height:"100px",
+        background:"white",
+        boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
+        cursor:"pointer",
+        "&:hover":{
+            background:"green",
+            color:"white",
+            fontWaight:"bold",
+        }
+    },
+    dataHeading:{
+        fontSize:"12px",
+        fontWeight:"bold", 
+        textAlign:"center",
+        padding:"5px",
+        boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
+        marginBottom:"5px",
+    },
+    dataTable:{
+    background:"white",
+    maxHeight:"200px",
+    overflow:"scroll"
+    },
+    dataRow:{
+        padding:"5px",
+        textAlign:"center",
+        cursor:"pointer",
+        fontSize:"12px",
+        "&:hover":{
+            background:"#F8F9FA",
+            boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
+        }
+    },
+    deleteIcon:{
+        background:"red",
+        width:"25px",
+        height:"25px",
+        padding:"3px",
+        [theme.breakpoints.up("sm")]:{
+ marginLeft:"20px",
+        }, 
+        borderRadius:"50%",
+        color:"white",
+        cursor:"pointer",
+        "&:hover":{
+            boxShadow: "rgba(0, 0, 0, 0.16) 4px 4px 4px",   
+            height:"28px",
+            width:"28px",
+            }
+    },
+    conformIcon:{
+        background:"green",
+        width:"25px",
+        height:"25px",
+        padding:"3px",
+        [theme.breakpoints.up("sm")]:{
+ marginLeft:"20px",
+        }, 
+        borderRadius:"50%",
+        color:"white",
+        cursor:"pointer",
+        "&:hover":{
+            boxShadow: "rgba(0, 0, 0, 0.16) 4px 4px 4px",   
+            height:"28px",
+            width:"28px",
+            }
+    },
+    editIcon:{
+        background:"blue",
+        width:"25px",
+        height:"25px",
+        padding:"3px",
+        [theme.breakpoints.up("sm")]:{
+ marginLeft:"20px",
+        }, 
+        borderRadius:"50%",
+        color:"white",
+        cursor:"pointer",
+        "&:hover":{
+            boxShadow: "rgba(0, 0, 0, 0.16) 4px 4px 4px",   
+            height:"28px",
+            width:"28px",
+            }
+    },
+}))
